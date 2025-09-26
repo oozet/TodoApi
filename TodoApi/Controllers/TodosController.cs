@@ -11,8 +11,9 @@ namespace TodoApi.Controllers
         // In-memory storage for simplicity
         private static readonly List<TodoItem> _todos = new List<TodoItem>
         {
-            new TodoItem { Id = 1, Title = "Lär dig Docker", Description = "Genomför Docker-labb", IsCompleted = false },
-            new TodoItem { Id = 2, Title = "Deploy till Azure", Description = "Deploya API till Azure VM", IsCompleted = false }
+            new TodoItem { Id = 1, Title = "Ändra koden", Description = "Testa att göra en kodändring lokalt", IsCompleted = true },
+            new TodoItem { Id = 2, Title = "Git pull till vm", Description = "Ladda upp kodändringen till git, och uppdatera koden i VM med en pull", IsCompleted = true },
+            new TodoItem { Id = 3, Title = "Kör deploy script och testa", Description = "Testa så att ändringen finns på VM", IsCompleted = true }
         };
         private static int _nextId = 3;
 
